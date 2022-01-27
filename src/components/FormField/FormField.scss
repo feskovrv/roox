@@ -1,0 +1,25 @@
+.formField{
+    display: flex;
+    flex-direction: column;
+
+    & > input {
+        width: 211px;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #D8D8D8;
+
+        &:read-only{
+            color: rgba($color: #000000, $alpha: 0.3);
+        }
+
+        &.error{
+            border: 2px solid red;
+        }
+
+        &:focus{
+            border: 1px solid #D8D8D8;
+            outline: inherit;
+        }
+    }
+}

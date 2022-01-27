@@ -1,0 +1,32 @@
+.userPage{
+    padding: 19px 30px;
+    grid-column: 3/10;
+    position: relative;
+
+    & > .button{
+        position: absolute;
+        right: 0;
+    }
+}
+.userPage__title{
+    font-size: 14px;
+    font-weight: 700;
+}
+.userPage__fields{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    padding: 20px 12px;
+    border: 1px solid #F3F3F3;
+    border-radius: 8px;
+
+    & span {
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 3px;
+    }
+}
+.userPage__commentField{
+    display: flex;
+    flex-direction: column;
+}

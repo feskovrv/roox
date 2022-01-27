@@ -1,0 +1,13 @@
+.button{
+    padding: 5px 15px;
+    display: inline-block;
+    background-color: #4B51EF;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+
+    &:disabled{
+        background-color: #AFAFAF;
+    }
+}

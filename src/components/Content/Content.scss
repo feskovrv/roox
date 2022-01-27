@@ -1,0 +1,25 @@
+.content{
+    padding: 19px 30px;
+    grid-column: 3/10;
+}
+.content__title{
+    font-size: 14px;
+    font-weight: 700;
+}
+.content__elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content__info{
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.loading{
+    display: block;
+    overflow: hidden;
+    height: 100px;
+  }
