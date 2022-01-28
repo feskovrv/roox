@@ -3,7 +3,6 @@ import './UserPage.scss';
 import FormField from '../FormField/FormField.js'
 import Button from "../Button/Button.js";
 
-// { title, fields, readOnly, edit, id}
 class UserPage extends Component {
     constructor(props){
         super(props);
@@ -48,14 +47,12 @@ class UserPage extends Component {
     }
 
     render(){
-        
         return(
             <div className="userPage">
                 <span className="userPage__title">{this.props.title}</span>
                 <Button 
                     label="Редактировать"
                     func={()=>{
-                        console.log('EDIT');
                         this.props.edit(this.props.id, false)
                     }}
                 />

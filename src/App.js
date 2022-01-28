@@ -22,16 +22,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    // api.getUserList()
-    //   .then((users)=>{
-    //     this.setState( () => {
-    //       return {
-    //         users
-    //       }
-    //     })
-    //   })
-    setTimeout( () => {
-      api.getUserList()
+    api.getUserList()
       .then((users)=>{
         this.setState( () => {
           return {
@@ -39,7 +30,6 @@ class App extends Component {
           }
         })
       })
-    }, 200)
   }
 
   sortUsers(param){
@@ -83,16 +73,6 @@ class App extends Component {
       'Phone': user.phone,
       'Website': user.website
     }
-    // let userArr = [
-    //   ['Name', user.name],
-    //   ['UserName', user.username],
-    //   ['E-mail', user.email],
-    //   ['Street', user.address.street],
-    //   ['City', user.address.city],
-    //   ['Zip Code', user.address.zipcode],
-    //   ['Phone', user.phone],
-    //   ['Website', user.website]
-    // ]
     return(
     <UserPage
       title="Профиль пользователя"
@@ -104,7 +84,6 @@ class App extends Component {
   }
 
   renderContent(){
-
     if(this.state.page === 'userList'){
       return (
         <Content 
@@ -116,7 +95,6 @@ class App extends Component {
     } else if (this.state.page === 'userFields') {
       return this.renderUserFields(this.state.id, this.state.noEditUser)
     }
-    
   }
 
   render() {
